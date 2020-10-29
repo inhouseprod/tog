@@ -1,0 +1,9 @@
+User-Agent: *
+Disallow: /css
+Disallow: /images
+Disallow: /includes
+Disallow: /js
+Disallow: /products
+Disallow: /test
+Disallow: /ui
+Disallow: /vendors
