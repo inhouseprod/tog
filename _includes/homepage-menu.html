@@ -1,77 +1,12 @@
-            <div id="navheader">
-              <div style="float:left; width:11px; vertical-align:top" >
-                <img style="height:271px; width:11px; border:0px; overflow:hidden" src="images/h_leftofnav.gif" alt="image" />
-              </div>
-              <div id="navpanel" style="height:271px">
-                <div style="height:24px"></div>
-                  <?php getSections(); ?>
-                </div>
-                  <?php $imagenum = rand(1,3);
-						          if ($imagenum === 1) {
-                    			echo "<div id=contentimage style=background-image:url(images/rotators/dart.PNG);>";
-						        } elseif ($imagenum === 2 ) {
-								          echo "<div id=contentimage style=background-image:url(images/rotators/present.PNG);>";
-						        } elseif ($imagenum === 3 ) {
-								          echo "<div id=contentimage style=background-image:url(images/rotators/runner.PNG);>";
-						        }
-						              unset($imagenum);
-						      ?>
-                    	<div id="contenttitle">
-                        <?php if (empty($section_ID)) { echo $section; } else { $sect=getSection($section_ID); echo $sect;} ?>
-                      </div>
-                </div>
-              </div>
-            </div>
----------
-<div id="preload">
-<img src="/images/tunnel.jpg" width="1" height="1" alt="Image 01" />
-<img src="/images/dart.jpg" width="1" height="1" alt="Image 02" />
-<img src="/images/puzzle.jpg" width="1" height="1" alt="Image 03" />
-<img src="/images/present.jpg" width="1" height="1" alt="Image 03" />
-<img src="/images/runner.jpg" width="1" height="1" alt="Image 03" />
+<div class="nav-container">
+  <div class="homepage-nav">
+    <ul>
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+      <li><a href="#">Menu 3</a></li>
+    </ul>
+  </div>
+  <div class="homepage-rotator">
+    <img src="/images/rotators/homepage1.png" alt="Our Expertise">
+  </div>
 </div>
-    <div id="contain">
-
-            <div id="logoheader">
-                <a href="http://www.oldhamgroup.com" title="offset ink blankets workflow Dalim Xitron Presstek printing plates VDP Pageflex web2print Megami Oki AGFA Kodak"><img src="images/TOG1.png"  width="790" height="60"></a>
-            </div>
-            <!--- top bulk tb --->
-            <div id="navheader">
-                <div style="float:left; width:11px; vertical-align:top" >
-                    <img style="height:475px; width:11px; border:0px" src="images/h_leftofnav.gif" alt="image" />
-                </div>
-                <div id="navpanel" >
-                    <div style="height:24px"></div>
-
-<div id='navitem' class='navdiv'><a class='topnav' href=si.php>Systems & Integration</a></div><div id='navitem' class='navdiv'><a class='topnav' href=supplies.php>Graphic Arts Supplies</a></div><div id='navitem' class='navdiv'><a class='topnav' href=prepress.php>Graphic Arts Equipment</a></div><div id='navitem' class='navdiv'><a class='topnav' href=flexo.php>Flexo</a></div><div id='navitem' class='navdiv'><a class='topnav' href=indsply.php>Industrial Supplies</a></div><div id='navitem' class='navdiv'><a class='topnav' href=http://www.oldhamgroupwf.com>Wide Format</a></div><div id='navitem' class='navdiv'><a class='topnav' href=about.php>Company Info & News</a></div><div id='navitem' class='navdiv'><a class='topnav' href=custserv.php>Customer Service</a></div>
-
-                    <div id="blurb"> For over 60 years<br />
-                        The Oldham Group has been<br />
-                        a source for supplies and equipment<br />
-                        for medium to large businesses.<br />
-                        You know the job...<br />
-                        we know the tools. </div>
-
-                </div>
-                <div id="flashcontainer">
-                    <div id="pic1" class="pics"><img src="/images/tunnel.jpg" alt="offset ink blankets workflow Dalim Xitron Presstek printing plates VDP Pageflex web2print Megami Oki AGFA Kodak"/>
-          <div id="txt1" class="txt">your needs</div>
-        </div>
-        <div id="pic2" class="pics"><img src="/images/dart.jpg" />
-          <div id="txt2" class="txt">our expertise</div>
-        </div>
-
-        <div id="pic3" class="pics"><img src="/images/puzzle.jpg" />
-          <div id="txt3" class="txt">your success</div>
-
-        </div>
-        <div id="pic4" class="pics"><img src="/images/present.jpg" />
-          <div id="txt4" class="txt">the complete<br />solution</div>
-
-        </div>
-        <div id="pic5" class="pics"><img src="/images/runner.jpg" />
-          <div id="txt5" class="txt">from start to finish</div>
-
-        </div>
-                </div>
-            </div>
