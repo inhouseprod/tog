@@ -60,8 +60,7 @@ a:hover {
 }
 .homepage-nav {
 	align-items: center;
-	flex-grow: fill;
-	flex-basis: 0;
+  flex: 1 1 auto;
 	min-width: 15vw;
 }
 .homepage-nav ul {
@@ -77,7 +76,7 @@ a:hover {
 	padding-bottom: 0.5em;
 }
 .homepage-rotator {
-	flex-basis: 45em;
+	flex: 2 1 0;
 }
 .homepage-rotator img {
 }
