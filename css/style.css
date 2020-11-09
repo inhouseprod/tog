@@ -18,15 +18,15 @@ h1 h2 h3 h4 h5 h6 a {
 	font-family: Trebuchet MS, verdana, arial, helvetica;
 }
 h1 {
-	font-size: 4vh;
+	font-size: 36px;
 	font-weight: bold;
 }
 h2 {
-	font-size: 3vw;
+	font-size: 24px;
 	font-weight: bold;
 }
 h3 {
-	font-size: 1vw;
+	font-size: 20px;
 }
 
 a {
@@ -50,18 +50,18 @@ a:hover {
 }
 
 /* NAV STYLES */
-.nav-container {
+.homepage-hero {
 	align-items: center;
-	background: rgb(96,96,96);
-	background: linear-gradient(202deg, rgba(96,96,96,1) 59%, rgba(170,170,170,1) 100%);
-	border-left: 10px solid #000;
-	padding-left: 2px;
-	display: flex;
+	border-left: 10px solid #606060;
+  display: flex;
+  flex: 1;
 }
 .homepage-nav {
 	align-items: center;
-  flex: 1 1 auto;
-	min-width: 15vw;
+  /* background: rgb(96,96,96); */
+	background: linear-gradient(202deg, rgba(96,96,96,1) 59%, rgba(170,170,170,1) 100%);
+	flex: 1 0 auto;
+  padding-left: 2px;
 }
 .homepage-nav ul {
 	color: #ffffff;
@@ -77,10 +77,33 @@ a:hover {
 }
 .homepage-rotator {
 	flex: 2 1 0;
+  height: 240px;
 }
 .homepage-rotator img {
+  height: inherit;
 }
 
+.home-content {
+  display: flex;
+  flex-direction: row;
+}
+.home-getstarted {
+  border-left: 10px solid #606060;
+  flex: 1;
+  padding: 0 2px 0;
+}
+.home-getstarted img {
+  flex: 1 1 auto;
+}
+.home-copy {
+  flex: 1 0 auto;
+}
+.home-news {
+
+}
+.home-headline {
+
+}
 /* OTHER STYLES */
 .forminput {
 	border:1px solid black;
@@ -199,7 +222,7 @@ a:hover {
 }
 
 
-#homecontent{
+.homecontent{
 	 float:left;
 	 width:700px;
 	 margin-top:5px;
