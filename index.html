@@ -1,23 +1,45 @@
 ---
 layout: default
 ---
-{% include homepage-menu.html %}
-<div class="home-content">
-  <div class="home-getstarted">
-    <img src="images/h_startphoto.png" alt="Intro to The Oldham Group"/>
-      <div class="home-copy">
-        	<h3>Getting Started</h3>
-           	<p>We'd love to talk to you. If you are looking for a solution we'd love the opportunity to show you how we can shine. We have solutions for areas throughout your business - in graphic arts as well as general industry. </p>
-            	<a class="cta" href="contactform.php?tab=0">Click here to request information</a>
-      </div>
+<div class="homepage-hero">
+  <div class="homepage-nav">
+    {% include homepage-menu.html %}
+    <div class="homepage-tagline">
+      For over 60 years The Oldham Group has been a source for supplies and equipment
+      for medium to large businesses.<br />
+      You know the job...<br />
+      we know the tools.<br />
+    </div>
   </div>
-    <div class="home-news" >
+  <div class="homepage-rotator">
+    {% include rotator.html %}
+  </div>
+</div>
+<div class="home-content">
+  <div class="left-content">
+    <div class="home-contentblock">
+      <img src="images/h_startphoto.png" alt="Intro to The Oldham Group"/>
+        <div class="home-copy">
+          	<h3>Getting Started</h3>
+             	<p>We'd love to talk to you. If you are looking for a solution we'd love the opportunity to show you how we can shine. We have solutions for areas throughout your business - in graphic arts as well as general industry. </p>
+              	<a class="cta" href="contactform.php?tab=0">Click here to request information</a>
+        </div>
+    </div>
+    <div class="home-contentblock">
       <img src="images/h_newsphoto.png" alt="News"/>
-      <div id="home-headline">
+      <div class="home-copy">
         <h3>Recent Headlines</h3>
+        {% for post in site.posts limit:1 %}
+          <h4>{{ post.title }}</h4>
+          <p>{{ post.description }}</p>
+        {% endfor %}
       </div>
     </div>
-</div>
-<div class="feature">
-  {% include feature.html %}
+  </div>
+  <div class="right-content">
+    <div class="home-feature">
+      <h3>Featured Product</h3>
+      {% include feature.html %}
+    </div>
+  </div>
 </div>
