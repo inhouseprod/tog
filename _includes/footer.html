@@ -5,56 +5,7 @@
     <a href="/about.php#tabs-2">Contact Us</a>
   </div>
   <div class="copyright">
-    &copy; The Oldham Group 2020
+    &copy; {{ "now" | date: "%Y" }} The Oldham Group
   </div>
-
-<script>
-jQuery.easing.def = "easeInQuint";
-
-
-function aniPics() {
-
-
-{ $( "#pic1" ).fadeIn(2000,"",
-  function(){$( "#txt1" ).fadeIn(1000,"",
-    function() {$( "#pic1" ).effect("fade","",2000,
-      function(){ $( "#pic2" ).fadeIn(2000,"",
-        function(){$( "#txt2" ).fadeIn(1000,"",
-          function(){ $( "#pic2" ).effect("fade","",2000,
-            function(){ $( "#pic3" ).fadeIn(2000,"",
-              function(){$( "#txt3" ).fadeIn(1000,"",
-                function(){ $( "#pic3" ).effect("fade","",2000,
-                  function(){ $( "#pic4" ).fadeIn(2000,"",
-                    function(){$( "#txt4" ).fadeIn(1000,"",
-                      function(){ $( "#pic4" ).effect("fade","",2000,
-                        function(){ $( "#pic5" ).fadeIn(2000,"",
-                          function(){$( "#txt5" ).fadeIn(1000,"",
-                            function(){ $( "#pic5" ).effect("fade","",3000,
-
-                                function() {$( "#pic1" ).fadeIn(2000,"",
-                              aniPics()
-                        //function(){ $( "#pic5" ).effect("fade","",5000
-                    //)}
-
-                              )}
-                            )}
-                        )}
-                    )}
-                  )}
-                )}
-              )}
-            )}
-          )}
-        )}
-      )}
-    )}
-  )}
-)}
-)}
-)};
- };
-$( "#pic1" ).ready(aniPics());
-
-</script>
 </body>
 </html>

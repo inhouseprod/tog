@@ -82,6 +82,10 @@ textarea {
   flex-direction: row;
   margin-bottom: 0.7em;
 }
+.homepage-hero.inside-hero {
+  max-height: 280px;
+  overflow: hidden;
+}
 .homepage-nav {
 	background: linear-gradient(202deg, rgba(96,96,96,1) 59%, rgba(170,170,170,1) 100%);
   flex: 1;
@@ -176,6 +180,22 @@ textarea {
 .feature-copy p {
   line-height: 1.5em;
 }
+/* INSIDE STYLES */
+h1.inside-title {
+  color: #fff;
+  margin: -260px 100px 0 30px;
+  position: absolute;
+  text-shadow: 0 2px black;
+  }
+}
+.inside-tabs .tab-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+.tab-menu li {
+
+}
 /* CONTACT FORM */
 .contactform {
   width: 50vw;
@@ -193,4 +213,8 @@ textarea {
 
 .footer a {
 	margin-right:20px;
+}
+
+@@media query {
+
 }

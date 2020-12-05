@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="body-container">
+    {% include header.html %}
+    <div class="content-container">
+      <div class="homepage-hero inside-hero">
+        <div class="homepage-nav">
+          {% include homepage-menu.html %}
+        </div>
+        <div class="homepage-rotator">
+          <img src="{{ page.image }}" alt="The Oldham Group | {{ page.title }}">
+          <h1 class="inside-title">{{ page.title }}</h1>
+        </div>
+      </div>
+    </div>
+    <div class="inside-bottom">
+      <div class="inside-tabs">
+        <ul class="tab-menu">
+          {% for slug in page.tabs %}
+            <li>{{ slug }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
