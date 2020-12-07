@@ -7,6 +7,7 @@ body {
 	display: flex;
 	flex-direction: column;
   font-family: 'Merriweather Sans', sans-serif;
+  max-width: 1200px;
 	min-height: 100vh;
 }
 .content-container {
@@ -191,7 +192,7 @@ h1.inside-title {
   height: 40vh;
   border-left: 10px solid #606060;
 }
-.inside-bakcground {
+.inside-background {
   background: rgba(170,170,170,1);
   height: 100%;
   margin-left: 2px;
@@ -240,6 +241,25 @@ h1.inside-title {
 	margin-right:20px;
 }
 
-@@media query {
-
+@media (max-width: 600px) {
+  html {
+    padding: 5px 0 0 0;
+  }
+  .header-contain img {
+  	padding: 10px 10px 0 10px;
+  	width: 70vw;
+  }
+  .homepage-hero {
+  	border-left: none;
+  }
+  .homepage-nav {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .inside-bottom {
+      border-left: none;
+    }
+  .inside-background {
+    margin-left: 0;
+  }
 }
