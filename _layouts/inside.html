@@ -21,7 +21,7 @@
         <div class="inside-tabs">
           <ul class="tab-menu">
             {% for slug in page.tabs %}
-              <li>{{ slug }}</li>
+              <li><a href="{{ slug.slug }}">{{ slug.longName }}</a></li>
             {% endfor %}
           </ul>
         </div>

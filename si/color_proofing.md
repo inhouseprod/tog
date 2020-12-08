@@ -1,5 +1,6 @@
 ---
 layout: inside
+title: Color Proofing
 ---
 The ability to manage color across multiple input and output devices is no longer the luxury it once was. A color managed proofing system is an absolute necessity. Ever shorter production schedules require the ability to guarantee color throughout the production cycle.
 
