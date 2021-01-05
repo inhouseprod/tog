@@ -1,0 +1,15 @@
+collections:
+  flexo:
+    output: true
+    image: /images/dart.png
+    tabs:
+      - slug: overview
+        longName: Overview
+      - slug: ink_coatings
+        longName: Ink & Coatings
+      - slug: misc
+        longName: Miscelaneous
+      - slug: pressroom
+        longName: Pressroom
+      - slug: plates_film
+        longName: Plates & Film
