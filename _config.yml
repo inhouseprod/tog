@@ -1,4 +1,5 @@
 # Initial Setup stuff
+url: "https://test.oldhamgroup.com"
 plugins:
     - jekyll-sitemap
 
