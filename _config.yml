@@ -1,15 +1,56 @@
+# Initial Setup stuff
+plugins:
+    - jekyll-sitemap
+
+# TOG Collections
 collections:
   flexo:
     output: true
-    image: /images/dart.png
-    tabs:
-      - slug: overview
-        longName: Overview
-      - slug: ink_coatings
-        longName: Ink & Coatings
-      - slug: misc
-        longName: Miscelaneous
-      - slug: pressroom
-        longName: Pressroom
-      - slug: plates_film
-        longName: Plates & Film
+    permalink: /:collection/:path/
+  indsupply:
+    output: true
+    permalink: /:collection/:path/
+  prepress:
+    output: true
+    permalink: /:collection/:path/
+  supplies:
+    output: true
+    permalink: /:collection/:path/
+  si:
+    output: true
+    permalink: /:collection/:path/
+  wideformat:
+    output: true
+    permalink: /:collection/:path/
+
+defaults:
+ -  scope:
+      path: ""
+      type: flexo
+    values:
+      layout: inside
+ -  scope:
+      path: ""
+      type: indsupply
+    values:
+      layout: inside
+ -  scope:
+      path: ""
+      type: prepress
+    values:
+      layout: inside
+ -  scope:
+      path: ""
+      type: supplies
+    values:
+      layout: inside
+ -  scope:
+      path: ""
+      type: si
+    values:
+      layout: inside
+ -  scope:
+     path: ""
+     type: wideformat
+    values:
+     layout: inside

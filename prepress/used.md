@@ -1,4 +1,0 @@
----
-layout: inside
-title: Used
----

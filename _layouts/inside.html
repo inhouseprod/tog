@@ -20,8 +20,8 @@
       <div class="inside-background">
         <div class="inside-tabs">
           <ul class="tab-menu">
-            {% for slug in page.tabs %}
-              <li><a href="{{ slug.slug }}">{{ slug.longName }}</a></li>
+            {% for tabs in site.data[page.collection].tabitems  %}
+              <li><a href="/{{ page.collection }}/{{ tabs.tab }}">{{ tabs.title }}</a></li>
             {% endfor %}
           </ul>
         </div>

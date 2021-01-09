@@ -1,0 +1,17 @@
+tabitems:
+- tab: index
+  title: Overview
+- tab: prepress
+  title: Prepress
+- tab: printers_scanners
+  title: Printers &amp; Scanners
+- tab: qc
+  title: Quality Control
+- tab: press
+  title: Press
+- tab: postpress_bindery
+  title: Postpress &amp; Bindery
+- tab: digital
+  title: Digital
+- tab: used
+  title: Used Equipment

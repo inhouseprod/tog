@@ -1,0 +1,15 @@
+tabitems:
+- tab: index
+  title: Overview
+- tab: facilities
+  title: Facilities
+- tab: janitorial
+  title: Janitorial
+- tab: material
+  title: Material Handling
+- tab: safety
+  title: Safety
+- tab: shipping
+  title: Shipping
+- tab: warehouse
+  title: Warehouse 

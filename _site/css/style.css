@@ -211,7 +211,7 @@ h1.inside-title {
 .tab-menu > li {
   display: inline-block;
   margin-left: 1em;
-  background: linear-gradient(180deg, #ccc 59%, rgba(170,170,170,1) 100%);
+  background: linear-gradient(180deg, #ccc 59%, rgba(216,216,216,1) 100%);
   padding: 10px 15px;
   margin: 0 1px;
   border: 2px solid #333;

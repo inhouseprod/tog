@@ -1,0 +1,11 @@
+tabitems:
+- tab: index
+  title: Overview
+- tab: collaboration_wp
+  title: Collaboration &amp; Web2Press
+- tab: color_proofing
+  title: Color Proofing
+- tab: qc_rip
+  title: QC &amp; Rip
+- tab: systems_storage
+  title: Systems &amp; Storage 
