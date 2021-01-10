@@ -21,7 +21,7 @@
         <div class="inside-tabs">
           <ul class="tab-menu">
             {% for tabs in site.data[page.collection].tabitems  %}
-              <li><a href="/{{ page.collection }}/{{ tabs.tab }}">{{ tabs.title }}</a></li>
+              <li class="{% if page.slug == tabs.tab %}selected{% else %}unselected{% endif %}"><a href="/{{ page.collection }}/{{ tabs.tab }}">{{ tabs.title }}</a></li>
             {% endfor %}
           </ul>
         </div>

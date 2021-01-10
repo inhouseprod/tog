@@ -2,6 +2,8 @@
 url: "https://test.oldhamgroup.com"
 plugins:
     - jekyll-sitemap
+exclude:
+  - .jekyll-cache
 
 # TOG Collections
 collections:
