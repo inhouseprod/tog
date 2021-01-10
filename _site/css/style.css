@@ -211,15 +211,19 @@ h1.inside-title {
 .tab-menu > li {
   display: inline-block;
   margin-left: 1em;
-  background: linear-gradient(180deg, #ccc 59%, rgba(216,216,216,1) 100%);
   padding: 10px 15px;
   margin: 0 1px;
   border: 2px solid #333;
-  border-bottom: none;
 }
 .tab-menu > li ~ li {
-  background: #f0f0f0;
   padding-left: 1em;
+}
+.tab-menu .selected {
+  background: linear-gradient(180deg, #ccc 59%, rgba(216,216,216,1) 100%);
+  border-bottom: none;
+}
+.tab-menu .unselected {
+  background: #f0f0f0;
   border-bottom: 2px solid #ccc;
 }
 .inside-content {
