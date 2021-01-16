@@ -24,6 +24,7 @@
   ga('create', 'UA-60130712-1', 'auto');
   ga('send', 'pageview');
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 
   </head>
   <body class="body-container">
@@ -53,7 +54,64 @@
     </div>
   </div>
   <div class="homepage-rotator">
-      <img src="/images/rotators/homepage1.png" alt="Our Expertise">
+    <script type="text/javascript">
+  $(function() {
+    $('#fader img:not(:first)').hide();
+    $('#fader img').css('position', 'absolute');
+    $('#fader img').css('top', '0px');
+    $('#fader img').css('left', '34%');
+    $('#fader img').each(function() {
+        var img = $(this);
+        $('<img>').attr('src', $(this).attr('src')).load(function() {
+            img.css('margin-left', -this.width / 2 + 'px');
+        });
+    });
+
+    var pause = false;
+
+    function fadeNext() {
+        $('#fader img').first().fadeOut().appendTo($('#fader'));
+        $('#fader img').first().fadeIn();
+    }
+
+    function fadePrev() {
+        $('#fader img').first().fadeOut();
+        $('#fader img').last().prependTo($('#fader')).fadeIn();
+    }
+
+    $('#fader, #next').click(function() {
+        fadeNext();
+    });
+
+    $('#prev').click(function() {
+        fadePrev();
+    });
+
+    $('#fader, .button').hover(function() {
+        pause = true;
+    },function() {
+        pause = false;
+    });
+
+    function doRotate() {
+        if(!pause) {
+            fadeNext();
+        }
+    }
+
+    var rotate = setInterval(doRotate, 3000);
+});
+</script>
+
+<div id="fader">
+  <img src="/images/rotators/1.jpg"/><h2>Your Needs</h2>
+  <img src="/images/rotators/2.jpg"/><h2>Our Expertise</h2>
+  <img src="/images/rotators/3.jpg"/><h2>The Complete Solution</h2>
+  <img src="/images/rotators/4.jpg"/><h2>Your Success</h2>
+  <img src="/images/rotators/5.jpg"/><h2>From Start to Finish</h2>
+</div>
+<div class="fade-button" id="next">Next</div>
+<div class="fade-button" id="prev">Prev</div>
 
   </div>
 </div>
