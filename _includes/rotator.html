@@ -1,1 +1,62 @@
-  <img src="/images/rotators/homepage1.png" alt="Our Expertise">
+<script type="text/javascript">
+  $(function() {
+    $('#fader img:not(:first)').hide();
+    $('#fader img').css('position', 'absolute');
+    $('#fader img').css('top', '0px');
+    $('#fader img').css('left', '46%');
+    $('#fader img').css('width', '100%');
+    $('#fader img').css('height', '100%');
+    $('#fader h2:not(:first)').hide();
+    $('#fader h2').css('transform', 'translate(480px, 30px)')
+    $('#fader img').each(function() {
+        var img = $(this);
+        $('<img>').attr('src', $(this).attr('src')).load(function() {
+            img.css('margin-left', -this.width / 2 + 'px');
+        });
+    });
+
+    var pause = false;
+
+    function fadeNext() {
+        $('#fader img').first().fadeOut().appendTo($('#fader'));
+        $('#fader img').first().fadeIn();
+        $('#fader h2').first().fadeOut().appendTo($('#fader'));
+        $('#fader h2').first().fadeIn();
+    }
+
+    function fadePrev() {
+        $('#fader img').first().fadeOut();
+        $('#fader img').last().prependTo($('#fader')).fadeIn();
+    }
+
+    $('#fader, #next').click(function() {
+        fadeNext();
+    });
+
+    $('#prev').click(function() {
+        fadePrev();
+    });
+
+    // $('#fader, .button').hover(function() {
+    //     pause = true;
+    // },function() {
+    //     pause = false;
+    // });
+
+    function doRotate() {
+        if(!pause) {
+            fadeNext();
+        }
+    }
+
+    var rotate = setInterval(doRotate, 3000);
+});
+</script>
+
+<div id="fader">
+  <img src="/images/rotators/1.png"/><h2>your needs</h2>
+  <img src="/images/rotators/2.png"/><h2>our expertise</h2>
+  <img src="/images/rotators/3.png"/><h2>your success</h2>
+  <img src="/images/rotators/4.png"/><h2>the complete<br>solution</h2>
+  <img src="/images/rotators/5.png"/><h2>from start<br>to finish</h2>
+</div>
