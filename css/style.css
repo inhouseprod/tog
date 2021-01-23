@@ -1,14 +1,16 @@
 /* GLOBAL STYLES */
 html {
-  padding: 5vh 10vw 0;
+  padding: 5vh 5vw;
 }
 body {
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;
   font-family: 'Merriweather Sans', sans-serif;
+  margin: 0 auto;
   max-width: 1200px;
 	min-height: 100vh;
+  width: 1080px;
 }
 .content-container {
 	width: 100%;
@@ -74,31 +76,7 @@ textarea {
 	width: 50vw;
 	max-width: 540px;
 }
-/* Image Rotator */
-#fader {
-    position: relative;
-    width: 100%;
-    /* height: 400px; */
-}
 
-.button {
-    background-color: green;
-    width: 50px;
-    height: 30px;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    position: absolute;
-    top: 30px;
-}
-
-#next {
-    right: 100px;
-}
-
-#prev {
-    left: 100px;
-}
 
 /* TOP HERO STYLES */
 .homepage-hero {
@@ -106,6 +84,7 @@ textarea {
   display: flex;
   flex-direction: row;
   margin-bottom: 0.7em;
+  width: 100%
 }
 .homepage-hero.inside-hero {
   max-height: 280px;
@@ -139,18 +118,37 @@ textarea {
     padding: 0 15px 15px;
     line-height: 1.2em;
 }
+/* Image Rotator */
+#fader {
+    height: 100%;
+    position: inherit;
+    width: 100%;
+}
+#fader h2 {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  /* transform: translate(480px, 30px); */
+  z-index: 999;
+}
 
 /* HOMEPAGE CONTENT */
 .homepage-rotator {
-	flex: 1;
+	flex: 3;
+  overflow: hidden;
+  position: relative;
+  transform: translate(-12px, 0);
 }
-.homepage-rotator img {
+/* .homepage-rotator img {
   height: 100%;
   width: 100%;
-}
+} */
 .home-content {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 .left-content {
   display: flex;
@@ -186,7 +184,6 @@ textarea {
 .home-feature {
   background: #eee;
   border: 5px solid #ccc;
-  flex: 1;
   padding: 1.25em;
  }
  .home-feature img {
@@ -213,9 +210,10 @@ h1.inside-title {
   text-shadow: 0 2px black;
   }
 .inside-bottom {
-  position: relative;
-  height: 40vh;
   border-left: 10px solid #606060;
+  height: 40vh;
+  max-width: 1005px;
+  position: relative;
 }
 .inside-background {
   background: rgba(216,216,216,1);
@@ -288,7 +286,7 @@ h1.inside-title {
 	margin-right:20px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   html {
     padding: 5px 0 0 0;
   }

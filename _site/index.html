@@ -59,7 +59,11 @@
     $('#fader img:not(:first)').hide();
     $('#fader img').css('position', 'absolute');
     $('#fader img').css('top', '0px');
-    $('#fader img').css('left', '34%');
+    $('#fader img').css('left', '46%');
+    $('#fader img').css('width', '100%');
+    $('#fader img').css('height', '100%');
+    $('#fader h2:not(:first)').hide();
+    $('#fader h2').css('transform', 'translate(480px, 30px)')
     $('#fader img').each(function() {
         var img = $(this);
         $('<img>').attr('src', $(this).attr('src')).load(function() {
@@ -72,6 +76,8 @@
     function fadeNext() {
         $('#fader img').first().fadeOut().appendTo($('#fader'));
         $('#fader img').first().fadeIn();
+        $('#fader h2').first().fadeOut().appendTo($('#fader'));
+        $('#fader h2').first().fadeIn();
     }
 
     function fadePrev() {
@@ -87,11 +93,11 @@
         fadePrev();
     });
 
-    $('#fader, .button').hover(function() {
-        pause = true;
-    },function() {
-        pause = false;
-    });
+    // $('#fader, .button').hover(function() {
+    //     pause = true;
+    // },function() {
+    //     pause = false;
+    // });
 
     function doRotate() {
         if(!pause) {
@@ -104,14 +110,12 @@
 </script>
 
 <div id="fader">
-  <img src="/images/rotators/1.jpg"/><h2>Your Needs</h2>
-  <img src="/images/rotators/2.jpg"/><h2>Our Expertise</h2>
-  <img src="/images/rotators/3.jpg"/><h2>The Complete Solution</h2>
-  <img src="/images/rotators/4.jpg"/><h2>Your Success</h2>
-  <img src="/images/rotators/5.jpg"/><h2>From Start to Finish</h2>
+  <img src="/images/rotators/1.png"/><h2>your needs</h2>
+  <img src="/images/rotators/2.png"/><h2>our expertise</h2>
+  <img src="/images/rotators/3.png"/><h2>your success</h2>
+  <img src="/images/rotators/4.png"/><h2>the complete<br>solution</h2>
+  <img src="/images/rotators/5.png"/><h2>from start<br>to finish</h2>
 </div>
-<div class="fade-button" id="next">Next</div>
-<div class="fade-button" id="prev">Prev</div>
 
   </div>
 </div>
