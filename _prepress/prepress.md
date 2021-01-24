@@ -1,6 +1,6 @@
 ---
 title: Prepress
-image: /images/dart.png
+image: /images/runner.png
 ---
 Full chemistry or processless clean and finish machines
 

@@ -76,7 +76,14 @@ textarea {
 	width: 50vw;
 	max-width: 540px;
 }
-
+.header-cta {
+  float: right;
+  padding: 0 0 5px;
+}
+.header-cta button {
+  float: right;
+  position: relative;
+}
 
 /* TOP HERO STYLES */
 .homepage-hero {
@@ -211,7 +218,6 @@ h1.inside-title {
   }
 .inside-bottom {
   border-left: 10px solid #606060;
-  height: 40vh;
   max-width: 1005px;
   position: relative;
 }
@@ -219,6 +225,7 @@ h1.inside-title {
   background: rgba(216,216,216,1);
   height: 100%;
   margin-left: 2px;
+  padding-bottom: 15px;
 }
 .inside-tabs {
   background: #2E4A91;
@@ -254,18 +261,27 @@ h1.inside-title {
 }
 .inside-content {
   display: flex;
-  flex: 1;
   margin-top: 3vh;
+  min-height: 40vh;
 }
 .inside-content .left-col {
+  flex: 1;
   margin: 0 15px;
-  width: 20%;
+  padding-left: 15px;
 }
 .inside-content .right-col {
-  width: 60%;
+  flex: 4;
+  margin: 0 15px;
+  padding: 0 10px 15px 20px;
+  border-left: 2px solid rgba(200, 200, 200, 0.7);
 }
 .inside-content .p {
   line-height: 1.75em;
+}
+.inside-content li {
+  line-height: 1.5em;
+  font-size: 0.85em;
+  font-family: 'Open Sans', sans-serif;
 }
 /* CONTACT FORM */
 .contactform {

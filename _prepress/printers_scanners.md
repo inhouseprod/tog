@@ -1,6 +1,6 @@
 ---
 title: Printers & Scanners
-image: /images/dart.png
+image: /images/runner.png
 ---
 
 Small…large…extra large and everything in between. Black & white…color…on all kinds of different stock…The Oldham Group has a printer for your needs.
