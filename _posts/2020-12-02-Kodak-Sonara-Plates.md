@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: posts
 headline: Kodak Sonara Plates
 description: Say Hello to Savings, Goodbye to Chemicals
-image: /images/Canton.png
+image: /images/dart.png
 ---
 What if you could say goodbye to unnecessary processing equipment, variability, and maintenance, while doing away with water waste and expensive chemicals? What would the impact be for you and your business?
 

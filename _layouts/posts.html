@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body class="body-container">
+    {% include header.html %}
+    <div class="content-container">
+      <div class="homepage-hero inside-hero">
+        <div class="homepage-nav">
+          {% include mainmenu.html %}
+        </div>
+        <div class="inside-hero">
+          <img src="{{ page.image }}" alt="The Oldham Group | {{ page.title }}">
+          <h1 class="inside-title">{{ page.title }}</h1>
+        </div>
+      </div>
+    </div>
+    <div class="inside-bottom">
+      <div class="inside-background">
+        <div class="inside-tabs">
+          <ul class="tab-menu">
+            {% for tabs in site.data[page.collection].tabitems  %}
+              <li class="{% if page.slug == tabs.tab %}selected{% else %}unselected{% endif %}"><a href="/{{ page.collection }}/{{ tabs.tab }}">{{ tabs.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="inside-content">
+          <div class="left-col">
+              {% assign contentArray = page.content | markdownify | split: site.excerpt_separator %}
+              {% if page.content contains site.excerpt_separator %}
+                {{ contentArray.first }}
+              {% endif %}
+          </div>
+          <div class="right-col">
+            <h1>{{ page.headline }}</h1>
+            <h3>{{ page.description }}</h3>
+            <p>{{ contentArray.last }}</p>
+          </div<
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    {% include footer.html %}
+  </body>
+</html>
