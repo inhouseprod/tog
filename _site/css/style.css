@@ -52,12 +52,14 @@ button {
   background: #274291;
   border-radius: 5px;
   display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1em;
 }
 button a {
   color: #fff;
 }
 input {
-  width 280px;
+  width: 280px;
 }
 textarea {
   width: 30vw;
@@ -72,9 +74,8 @@ textarea {
 	z-index: 1;
 }
 .header-contain img {
-	padding: 30 30 0 30;
-	width: 50vw;
-	max-width: 540px;
+  padding: 30 30 0 30;
+	width: 70%;
 }
 .header-cta {
   float: right;
@@ -184,7 +185,6 @@ textarea {
 }
 .home-copy {
   padding: 0 15px 0 0;
-  max-width: 400px;
 }
 
 /* FEATURE BLOCK */
@@ -210,6 +210,10 @@ textarea {
   line-height: 1.5em;
 }
 /* INSIDE STYLES */
+.inside-hero img {
+    float: right;
+    min-width: 785px;
+}
 h1.inside-title {
   color: #fff;
   margin: -260px 100px 0 30px;
@@ -218,7 +222,6 @@ h1.inside-title {
   }
 .inside-bottom {
   border-left: 10px solid #606060;
-  max-width: 1005px;
   position: relative;
 }
 .inside-background {
@@ -275,13 +278,20 @@ h1.inside-title {
   padding: 0 10px 15px 20px;
   border-left: 2px solid rgba(200, 200, 200, 0.7);
 }
-.inside-content .p {
-  line-height: 1.75em;
+.inside-content p {
+  line-height: 1.7em;
+  margin-bottom: 12px;
 }
 .inside-content li {
   line-height: 1.5em;
   font-size: 0.85em;
   font-family: 'Open Sans', sans-serif;
+  padding-left: 0.5em;
+}
+.inside-content li::marker {
+  font-family: 'Font Awesome 5 Free';
+  content: "\f14a";
+  padding-right: .5em;
 }
 /* CONTACT FORM */
 .contactform {
