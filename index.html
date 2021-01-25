@@ -31,11 +31,7 @@ layout: default
     <div class="home-contentblock">
       <img src="images/h_newsphoto.png" alt="News"/>
       <div class="home-copy">
-        <h3>Recent Headlines</h3>
-        {% for post in site.posts limit:1 %}
-          <h4>{{ post.title }}</h4>
-          <p>{{ post.description }}</p>
-        {% endfor %}
+        {% include recent_headlines.html %}
       </div>
     </div>
   </div>
