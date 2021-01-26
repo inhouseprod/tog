@@ -1,5 +1,0 @@
-steps:
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['run', '--rm', '--volume=/workspace:/srv/jekyll', '--privileged', 'gcr.io/test2.oldhamgroup.com/jekyll:latest', '/root/init_build.sh']
-  - name: gcr.io/cloud-builders/gsutil
-    args: ["-m", "rsync", "-r", "-c", "-d", "./vision/explore-api", "gs://test2.oldhamgroup.com/"]
