@@ -1,3 +1,9 @@
 steps:
-  - name: gcr.io/cloud-builders/gsutil
+  - id: "Build Jekyll Site"
+    name: jekyll/jekyll
+    args: ['jekyll','build']
+  - id: "Deploy to Google Cloud"
+    name: gcr.io/cloud-builders/gsutil
     args: ["-m", "rsync", "-r", "-c", "-d", "./vision/explore-api", "gs://test2.oldhamgroup.com/"]
+  - id: "Flush cache"
+    name: 
