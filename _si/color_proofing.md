@@ -1,9 +1,11 @@
 ---
 title: Color Proofing
-image: /images/dart.png
+image: /images/swatchbook.png
 ---
-
+{% include contactform.html %}
 <!-- split -->
-The ability to manage color across multiple input and output devices is no longer the luxury it once was. A color managed proofing system is an absolute necessity. Ever shorter production schedules require the ability to guarantee color throughout the production cycle.
+**The ability to manage color across multiple input and output devices is absolutely essential.** Shorter production schedules, ever evolving proofing devices and more, require the ability to guarantee color throughout the production cycle.
 
-Oldham has the expertise to deliver top quality color managed proofing solutions. Do you need an internet enabled soft proofing solution, or a contract-quality inkjet proof? Maybe you're in the market for a double sided impostion proofer? Oldham provides custom ICC profile creation services and color management training to keep your color in control.
+Oldham delivers top quality color managed proofing solutions. Our G7 Certified Experts and industry leading proofing solutions can bring the ideal proofing solution to your business.
+
+![G7 Certification](/images/g7_seal.png)

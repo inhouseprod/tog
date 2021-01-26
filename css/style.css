@@ -65,6 +65,9 @@ textarea {
   width: 30vw;
   height: 15vh;
 }
+hr {
+  border: 1px solid rgba(200, 200, 200, 0.7);
+}
 
 
 /* HEADER STYLES */
@@ -89,6 +92,7 @@ textarea {
 /* TOP HERO STYLES */
 .homepage-hero {
 	border-left: 10px solid #606060;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   margin-bottom: 0.7em;
@@ -216,7 +220,7 @@ textarea {
 }
 h1.inside-title {
   color: #fff;
-  margin: -260px 100px 0 30px;
+  margin: 200px 100px 0 30px;
   position: absolute;
   text-shadow: 0 2px black;
   }

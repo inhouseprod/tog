@@ -1,6 +1,6 @@
 ---
 title: Collaboration and Web-2-Press
-image: /images/dart.png
+image: /images/designer.png
 ---
 
 <!-- split -->

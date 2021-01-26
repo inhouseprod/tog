@@ -1,6 +1,6 @@
 ---
 title: Miscellaneous
-image: /images/dart.png
+image: /images/flexo_plate.jpg
 ---
 
 <!-- split -->

@@ -30,9 +30,9 @@
               {% assign contentArray = page.content | markdownify | split: site.excerpt_separator %}
               {% if page.content contains site.excerpt_separator %}
                 {{ contentArray.first }}
-              {% endif %}
           </div>
           <div class="right-col">
+            {% endif %}
             <p>{{ contentArray.last }}</p>
           </div<
         </div>
