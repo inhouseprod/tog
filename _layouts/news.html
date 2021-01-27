@@ -12,7 +12,6 @@
         </div>
         <div class="inside-hero">
           <img src="{{ page.image }}" alt="The Oldham Group | {{ page.title }}">
-          <h1 class="inside-title">{{ page.title }}</h1>
         </div>
       </div>
     </div>
@@ -27,15 +26,12 @@
         </div>
         <div class="inside-content">
           <div class="left-col">
-              {% assign contentArray = page.content | markdownify | split: site.excerpt_separator %}
-              {% if page.content contains site.excerpt_separator %}
-                {{ contentArray.first }}
-              {% endif %}
+              {% include recent_headlines.html %}
           </div>
           <div class="right-col">
             <h1>{{ page.headline }}</h1>
             <h3>{{ page.description }}</h3>
-            <p>{{ contentArray.last }}</p>
+            <p>{{ content }}</p>
           </div<
         </div>
       </div>

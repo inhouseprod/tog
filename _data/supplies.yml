@@ -3,9 +3,9 @@ tabitems:
   title: Overview
 - tab: ink_coatings
   title: Ink &amp; Coatings
-- tab: misc
-  title: Miscellaneous
 - tab: plates_film
   title: Plates &amp; Film
 - tab: pressroom
-  title: Pressroom 
+  title: Pressroom
+- tab: misc
+  title: Everything Else

@@ -4,7 +4,7 @@ plugins:
     - jekyll-sitemap
 exclude:
   - .jekyll-cache
-excerpt_separator: "<!-- split -->"  
+excerpt_separator: "<!-- split -->"
 
 # TOG Collections
 collections:
@@ -31,6 +31,12 @@ collections:
     permalink: /:collection/:path/
 
 defaults:
+ -  scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /news/:slug/
  -  scope:
       path: ""
       type: flexo

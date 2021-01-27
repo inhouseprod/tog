@@ -11,4 +11,7 @@ image: /images/dart.png
 - Staplers & Staples  
 - Warehouse Labels  
 <!-- split -->
-Every warehouse is different. We have a huge selection of products to help maintain your process organization. Plus more opportunities for cost containment, and we can help find the best options for your operations.  
+**Every warehouse is different.** We have a huge selection of products to help maintain your process organization. Plus more opportunities for cost containment, and we can help find the best options for your operations.  
+
+## Do you need warehouse equpiment and supplies?
+{% include cta_button.html %}

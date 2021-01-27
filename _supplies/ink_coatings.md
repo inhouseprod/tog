@@ -2,6 +2,17 @@
 title: Ink & Coatings
 image: /images/dart.png
 ---
-
+## Need input on your ink?
+{% include cta_button.html %}
 <!-- split -->
-Process inks, special color match inks, UV curing inks, heatset / non-heatset, inks for special stocks, varnishes and coatings, offset, flexo, screen, digital inkjet...what ever kind of ink you need for the job...Oldham and our partners can supply what you need. If you are not sure what ink will work best for you, call us. Our staff will listen and recommend the right product for the purpose. Have something truly unusual? We have vendors who will help you develop a product to fit your process.
+**Process inks, special color match inks, UV curing inks**, heatset / non-heatset, inks for special stocks, varnishes and coatings, offset, flexo, screen, digital inkjet...what ever kind of ink you need for the job...Oldham and our partners have what you need.
+
+Not sure what ink is best for you, [call us](/contact/). Our pros will recommend the perfect product for your unique job. Have something truly unusual? We have partners to help you develop a product to fit your process.
+
+**Partners we work with:**
+ - Coatings & Adhesives Corporation
+ - INX International
+ - Megami Ink
+ - Polymeric Imaging
+ - The Oldham Group
+ - VanSon Ink

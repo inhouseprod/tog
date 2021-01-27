@@ -10,4 +10,7 @@ image: /images/dart.png
 - Smoker Receptacles  
 - Trash Cans, Liners and tilt trucks  
 <!-- split -->
-Every business has a long list of minor but important items needed to keep the doors open. Consolidate your orders through Oldham to get the best cost control on all your supplies.  
+**Every business has a long list of minor but important items** needed to keep the doors open. Consolidate your orders through Oldham to get the best cost control on all your supplies.  
+
+## We have the facilities management products you need
+{% include cta_button.html %}

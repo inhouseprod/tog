@@ -25,10 +25,11 @@ h1 {
 }
 h2 {
 	font-size: 24px;
+  line-height: 1.2;
 }
 h3 {
 	font-size: 1.5em;
-  padding-bottom: 0.4em;
+  padding-bottom: 0.6em;
 }
 
 a {
@@ -82,6 +83,7 @@ hr {
 }
 .header-cta {
   float: right;
+  margin-top: 45px;
   padding: 0 0 5px;
 }
 .header-cta button {
@@ -149,7 +151,6 @@ hr {
 /* HOMEPAGE CONTENT */
 .homepage-rotator {
 	flex: 3;
-  overflow: hidden;
   position: relative;
   transform: translate(-12px, 0);
 }
@@ -189,6 +190,9 @@ hr {
 }
 .home-copy {
   padding: 0 15px 0 0;
+}
+.home-copy h4 {
+  padding-top: 0.5em;
 }
 
 /* FEATURE BLOCK */
@@ -271,6 +275,17 @@ h1.inside-title {
   margin-top: 3vh;
   min-height: 40vh;
 }
+.left-col h2 {
+  padding-bottom: 8px;
+}
+.left-col h4 {
+  padding: 0 0 4px 0;
+  line-height: 1.25;
+}
+.left-col p {
+  line-height: 1;
+  padding: 0 0 1.5em 0;
+}
 .inside-content .left-col {
   flex: 1;
   margin: 0 15px;
@@ -282,20 +297,23 @@ h1.inside-title {
   padding: 0 10px 15px 20px;
   border-left: 2px solid rgba(200, 200, 200, 0.7);
 }
-.inside-content p {
-  line-height: 1.7em;
+.right-col ul {
+  padding-left: 1em;
+}
+.right-col p {
+  line-height: 1.5;
   margin-bottom: 12px;
 }
 .inside-content li {
   line-height: 1.5em;
   font-size: 0.85em;
   font-family: 'Open Sans', sans-serif;
-  padding-left: 0.5em;
+  padding-left: 1em;
 }
 .inside-content li::marker {
-  font-family: 'Font Awesome 5 Free';
   content: "\f14a";
-  padding-right: .5em;
+  font-family: 'Font Awesome 5 Free';
+  padding: .5em
 }
 /* CONTACT FORM */
 .contactform {
@@ -315,7 +333,7 @@ h1.inside-title {
 .footer a {
 	margin-right:20px;
 }
-
+/*
 @media (max-width: 1200px) {
   html {
     padding: 5px 0 0 0;
@@ -337,4 +355,4 @@ h1.inside-title {
   .inside-background {
     margin-left: 0;
   }
-}
+} */
