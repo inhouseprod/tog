@@ -1,6 +1,6 @@
 ---
 title: Workflow
-image: /images/dart.png
+image: /images/designer.png
 ---
 ## Need to evaluate your workflow?
 {% include cta_button.html %}

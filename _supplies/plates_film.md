@@ -1,6 +1,6 @@
 ---
 title: Plates & Film
-image: /images/dart.png
+image: /images/printing-at-high-speed.jpg
 ---
 ## Ask us about or extensive line of pressroom supplies
 {% include cta_button.html %}

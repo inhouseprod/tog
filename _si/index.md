@@ -1,6 +1,6 @@
 ---
 title: Overview
-image: /images/designer.png
+image: /images/network_switch.png
 permalink: /si/
 ---
 

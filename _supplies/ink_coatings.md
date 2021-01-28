@@ -1,6 +1,6 @@
 ---
 title: Ink & Coatings
-image: /images/dart.png
+image: /images/printing-at-high-speed.jpg
 ---
 ## Need input on your ink?
 {% include cta_button.html %}

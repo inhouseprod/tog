@@ -1,6 +1,6 @@
 ---
 title: Systems & Storage
-image: /images/dart.png
+image: /images/network_switch.png
 ---
 ## Need storage, networking or backup solutions?
 {% include cta_button.html %}

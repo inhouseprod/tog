@@ -1,7 +1,7 @@
 ---
 title: Graphic Arts Supplies
 permalink: /supplies/
-image: /images/dart.png
+image: /images/printing-at-high-speed.jpg
 ---
 ## Ask us about our extensive list of supplies for the graphic arts industry.
 {% include cta_button.html %}

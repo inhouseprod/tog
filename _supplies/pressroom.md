@@ -1,6 +1,6 @@
 ---
 title: Pressroom
-image: /images/dart.png
+image: /images/printing-at-high-speed.jpg
 ---
 ## Ask about our extensive pressroom solutions
 {% include cta_button.html %}

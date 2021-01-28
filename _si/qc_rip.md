@@ -1,6 +1,6 @@
 ---
 title: QC and RIP Options
-image: /images/dart.png
+image: /images/network_switch.png
 ---
 ## RIP, QC, Workflow solutions
 {% include cta_button.html %}
